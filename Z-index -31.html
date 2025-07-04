@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewparf" content="width=device width">
+        <title>Z-index and variable </title>
+    
+    <style>
+            :root{
+                ---primary-color:green;
+                ---secordary-color:red;
+            }
+
+
+        div{
+            height: 250px;
+            width: 250px;
+            Z-index:1;
+        }
+
+        #div1{
+            background:var(---primary-color);
+            position:absolute;
+
+        }
+        #div2{
+            background:var(---secordary-color);
+            position:absolute;
+            left: 150px;
+            top: 150px;
+            z-index: 2;
+        }
+        
+        @media screen and(max-width:600px){
+            :toot{
+                ---prirmary-color:black;
+                ---secordary-color:green;
+            }
+        }
+
+
+
+
+        </style>
+
+    </head>
+
+        <body>
+             <div id="div1"> </div>
+             <div id="div2"> </div>
+
+
+        </body>
+        </html>

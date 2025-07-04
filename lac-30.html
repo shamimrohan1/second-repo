@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="ciewport content="width=device-sidth>
+    <title> overflow and tooltip </title>
+
+    <style>
+        
+        div{
+            height: 100px;
+            width: 250px;
+            background-color:green;
+            border:1px solid red;
+        }
+        .tooltip{
+            position:relative;
+        }
+
+        .tooltip.tooltip-text{
+            visibility:hidden;
+            width: 150px;
+            background-color:indigo;
+            color:white;
+            border:10px;
+            border-radius: 5px;
+            position:absolute;
+            top: 30px;
+            left: 40px;
+            z-index:1;
+        }
+        .tooltip:hover.tooltip-text{
+            visibility:visible;
+        }
+
+        </style>
+    </head>
+    <body>
+<div>clite sea santas diam labe 
+    i am rohan
+    froom bangladesh
+    i am a student in dhaka internation univercity
+    form computer scenice engreering 
+</div>
+
+       <a href="#" class="tooltip">
+        facebook
+        <span class="tooltip-text"> Facebook is social media </span>
+       </a>
+
+
+    </body>
+</html>
